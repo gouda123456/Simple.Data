@@ -267,7 +267,8 @@ end
             {
                 return (string)tmp;
             }
-            return null;
+            else{return null;} //i think return should be in else statement
+            
         }
 
         public static Nullable<T> GetNullableValue<T>(this SqlDataReader reader, int index) where T : struct
